@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "study-control",
+    "name": "Study Control",
     "slug": "study-control",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -12,7 +12,11 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.studycontrol.app",
+      "infoPlist": {
+        "NSCalendarsUsageDescription": "Study Control usa el calendario para programar recordatorios de tareas."
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -25,6 +29,19 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "@react-native-community/datetimepicker",
+      "expo-router",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#4A90D9",
+          "iosDisplayInForeground": true
+        }
+      ]
+    ],
+    "scheme": "studycontrol"
   }
 }
