@@ -51,6 +51,7 @@ export default function DatePickerField({ value, mode, minimumDate, onChange, fo
         borderRadius: '10px',
         cursor: 'pointer',
         gap: '10px',
+        border: '1.5px solid #E8ECF0',
       }}
     >
       <span style={{ flex: 1, fontSize: '16px', color: '#2C3E50', fontWeight: '500', fontFamily: 'system-ui' }}>
