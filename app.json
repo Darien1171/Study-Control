@@ -28,7 +28,14 @@
       "predictiveBackGestureEnabled": false
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "output": "static",
+      "bundler": "metro",
+      "name": "Study Control",
+      "shortName": "Study",
+      "description": "Controla tus tareas académicas desde cualquier lugar",
+      "themeColor": "#4A90D9",
+      "backgroundColor": "#F5F7FA"
     },
     "plugins": [
       "@react-native-community/datetimepicker",
